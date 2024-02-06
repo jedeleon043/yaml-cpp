@@ -9,7 +9,7 @@ VERSION=0.8.0
 
 .PHONY : release
 release:	directories build headers
-	cp build/libyaml-cpp.so.${VERSION} ../out/lib
+	cp -a build/libyaml-cpp.so** ../out/lib
 
 .PHONY : build
 build:
